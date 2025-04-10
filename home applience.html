@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Appliances Store</title>
+    <link rel="stylesheet" href="homeapplince.css" >
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Shopify</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="shopping.html">Home</a></li>
+                <li><a href="Products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="shopping.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Upgrade Your Home with the Latest Appliances</h1>
+        <br><br>  
+        <a href="#shop" class="cta-button">Shop Now</a>
+    </div>
+</section>
+
+<section id="shop" class="products">
+    <h2>Featured Products</h2>
+    <div class="product-container">
+        <div class="product">
+            <img src="images/fridge" alt="Fridge">
+            <h3>Smart Refrigerator</h3>
+            <p>₹49,999.99</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/washing machine.jpg" alt="Washing Machine">
+            <h3>Automatic Washing Machine</h3>
+            <p>₹20,599.99</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/micro oven.webp" alt="Microwave"><br><br><br><br><br>
+            <h3>Microwave Oven</h3><br>
+            <p>₹5,199.99</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<section id="shop" class="products">
+    <h2>Best Seller</h2>
+    <div class="product-container">
+        <div class="product">
+            <img src="images/mixer.jpg" alt="Fridge">
+            <h3>Mixer Grinder</h3>
+            <p>₹1,999.99</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/frier.jpg" alt="Washing Machine">
+            <h3>Frier</h3>
+            <p>₹4,599.99</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/sofa" alt="Microwave"><br><br><br><br>
+            <h3>Furniture</h3>
+            <p>₹19,999.99</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<section class="testimonial">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-container">
+        <div class="testimonial-item">
+            <p>"The best fridge I have ever owned. It's super smart!"</p>
+            <span>- Devi vara prasad.</span>
+        </div>
+        <div class="testimonial-item">
+            <p>"I love my new washing machine! It saves so much time!"</p>
+            <span>- Samantha.</span>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Home Appliances Store | All Rights Reserved</p>
+    </div>
+</footer>
+
+<script src="scripts.js">
+    // Example of a simple JavaScript for interactive features
+document.querySelectorAll('.btn').forEach(button => {
+    button.addEventListener('click', () => {
+        alert('Item added to cart!');
+    });
+});
+
+</script>
+</body>
+</html>
