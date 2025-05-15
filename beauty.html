@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health & Beauty Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 1.8em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cart a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+    color: rgb(4, 4, 4);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background-color: #d2ba4f;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.products {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.products h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Set all images to a fixed size */
+.product-card img {
+    width: 250px; 
+    height: 250px;  
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+
+.product-card h3 {
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.product-card p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.product-card button {
+    background-color: #d5cb6d;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.subscription {
+    background-color: #f1eced;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.subscription h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.subscription form {
+    margin-top: 20px;
+}
+
+.subscription input {
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid #f0e1e1;
+    font-size: 16px;
+}
+
+.subscription button {
+    background-color: #d2ba4f;
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+footer .footer-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .socials {
+    margin: 0px 0;
+}
+
+footer .socials a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+}
+@media (max-width: 1024px) {
+    header nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        margin: 10px 15px;
+    }
+
+    .product-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product-card img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        margin: 10px 15px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .products h2, .subscription h2 {
+        font-size: 28px;
+    }
+
+    .product-card img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .subscription input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">
+            <h1>Shopify</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="shopping.html">Home</a></li>
+                <li><a href="#Products1">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Your Beauty, Our Passion</h2>
+            <p>Discover the best in health and beauty products for radiant skin, wellness, and vitality.</p>
+            <button><a href="#">Shop Now</a></button>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="products" id="products1">
+        <h2>Featured Products</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="images/cetaphil2.webp" alt="Product 1">
+                <h3>Organic Skincare</h3>
+                <p>₹ 429.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/serum.avif" alt="Product 2">
+                <h3>Beauty Serum</h3>
+                <p>₹349.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/multivitamins" alt="Product 3">
+                <h3>Vitamins & Supplements</h3>
+                <p>₹649.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Section -->
+    <section class="subscription" id="contact">
+        <h2>Stay Beautiful & Healthy</h2>
+        <p>Sign up for our newsletter and get exclusive deals, tips, and discounts!</p>
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2025 BeautyHub. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

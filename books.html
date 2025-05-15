@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Book Haven - Online Bookstore</title>
+  <link rel="stylesheet" href="books.css">
+  <style>
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 1.8em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo h1 {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url('books-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: black;
+
+}
+
+.shop-now {
+  background-color: #ff6347;
+  padding: 15px 25px;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* Books Section */
+.books-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.books-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.books-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.book-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+}
+
+.book-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.book-card h3 {
+  font-size: 1.5em;
+  margin-top: 15px;
+}
+
+.book-card .book-author {
+  font-size: 1em;
+  margin-top: 5px;
+  color: #555;
+}
+
+.book-card .book-price {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #ff6347;
+}
+
+.buy-now {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-now:hover {
+  background-color: #ff6347;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  background-color: #ff6347;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+footer p {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+@media(max-width:767px) {
+  .logo{padding-bottom: 30px;}
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-section {
+    height: auto;
+    padding: 20px;
+  }
+
+  .hero-content h2 {
+    font-size: 2em;
+  }
+
+  .hero-content p {
+    font-size: 1em;
+  }
+
+  .books-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .book-card {
+    width: 100%;
+  }
+
+  .contact-section {
+    padding: 30px 10px;
+  }
+
+  footer p {
+    font-size: 0.8em;
+    padding: 5px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo">
+        <h1>Shopify</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="shopping.html">Home</a></li>
+            <li><a href="Products">Products</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <h2>Your Next Great Read Awaits</h2>
+      <p>Explore a vast collection of books across genres and find your new favorite today.</p>
+      <a href="#books" class="shop-now">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Books Section -->
+  <section id="books" class="books-section">
+    <h2>Our Featured Books</h2>
+    <div class="books-container">
+      <!-- Book 1 -->
+      <div class="book-card">
+        <img src="images/book1" alt="Book 1" class="book-img">
+        <h3>sychology of money</h3>
+        <p class="book-author">by Author Name</p>
+        <p class="book-price">₹199.99</p>
+        <button class="buy-now">Buy Now</button>
+      </div>
+      <!-- Book 2 -->
+      <div class="book-card">
+        <img src="images/book2.jpg" alt="Book 2" class="book-img">
+        <h3>Dont Believe Anything </h3>
+        <p class="book-author">by Author Name</p>
+        <p class="book-price">₹149.99</p>
+        <button class="buy-now">Buy Now</button>
+      </div>
+      <!-- Book 3 -->
+      <div class="book-card">
+        <img src="images/book3.jpg" alt="Book 3" class="book-img">
+        <h3>Dopamaine Detox<br><br>
+        </h3>
+        <p class="book-author">by Author Name</p>
+        <p class="book-price">₹249.99</p>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need recommendations, feel free to reach out!</p><br><br>
+    <button class="contact-btn">Contact Support</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Book Haven. All Rights Reserved.</p>
+    
+  </footer>
+
+</body>
+</html>

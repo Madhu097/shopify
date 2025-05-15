@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Clothing Store</title>
+    <style>
+        /* Resetting default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo h1 {
+            font-size: 1.8em;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+
+        /* Hero Section */
+        .hero {
+            background-color: #2980b9;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        /* Products Section */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 30px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+        }
+
+        .product-card img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        
+        }
+
+        .product-card h3 {
+            font-size: 1.3rem;
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            color: #777;
+        }
+
+        .product-card .price {
+            font-size: 1.5rem;
+            color: #e74c3c;
+            margin: 10px 0;
+        }
+
+        .product-card button {
+            padding: 10px 20px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .product-card button:hover {
+            background-color: #3498db;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            .products {
+            grid-template-columns: repeat(2, 1fr);
+            }
+
+            header nav ul {
+            flex-direction: column;
+            align-items: center;
+            }
+
+            header nav ul li {
+            margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .products {
+            grid-template-columns: 1fr;
+            }
+
+            header {
+            flex-direction: column;
+            text-align: center;
+            }
+
+            header .logo h1 {
+            margin-bottom: 10px;
+            }
+
+            header nav ul {
+            flex-direction: column;
+            align-items: center;
+            }
+
+            header nav ul li {
+            margin: 5px 0;
+            }
+
+        }
+
+        @media (max-width: 1024px) and (min-width: 769px) {
+           
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header nav ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #3498db;
+        }
+            footer {
+                
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 10px;
+            }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Shopify</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="shopping.html">Home</a></li>
+                <li><a href="Products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Discover Your Style</h2>
+        <p>Shop the latest trends in fashion for all occasions</p>
+    </div>
+
+    <!-- Products Section -->
+    <div class="products">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="images/men shirt.jpg" alt="Shirt">
+            <h3>Men's Casual Shirt</h3>
+            <p>Comfortable and stylish for everyday wear</p>
+            <div class="price">₹ 599.99</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="images/pant.jpg" alt="Pants">
+            <h3>Men's Slim Fit Pants</h3>
+            <p>Perfect for both casual and formal looks</p>
+            <div class="price">₹ 499.99</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="images/women" alt="Dress">
+            <h3>Women's Elegant Dress</h3>
+            <p>Ideal for special occasions and evening wear</p>
+            <div class="price">₹ 399.99</div>
+            <button>Add to Cart</button>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/shoe/l/d/k/-original-imah2ur5xj9zyz36.jpeg?q=90&crop=false" alt="Unisex Running Shoes">
+            <h3>Unisex Running Shoes</h3>
+            <p>Lightweight and durable for everyday runs</p>
+            <div class="price">₹ 799.99</div>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+<footer class="footer">
+    <p style="text-align: center; padding: 10px; background-color: #333; color: white;">
+        &copy; 2025 Shopify. All rights reserved.
+    </p>
+</footer>
+</body>
+</html>
